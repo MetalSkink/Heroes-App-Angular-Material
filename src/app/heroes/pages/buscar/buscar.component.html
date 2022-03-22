@@ -29,8 +29,10 @@
   <!-- <div>
     <pre>{{heroeSeleccionado | json}}</pre>
   </div> -->
-  <div *ngIf="heroeSeleccionado">
-    <app-heroe-tarjeta [heroe]="heroeSeleccionado"></app-heroe-tarjeta>
+  <div *ngIf="heroeSeleccionado" fxLayout="row wrap" fxLayout.xs="column">
+    <div fxFlex="25" fxFlex.lg="25" fxFlex.sm="30">
+      <app-heroe-tarjeta [heroe]="heroeSeleccionado"></app-heroe-tarjeta>
+    </div>
   </div>
 
 </div>
